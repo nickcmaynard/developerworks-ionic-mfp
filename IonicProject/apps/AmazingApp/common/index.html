@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AmazingApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <!--
+    			<link rel="shortcut icon" href="images/favicon.png">
+    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    		-->
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        window.$ = window.jQuery = WLJQ;
+    </script>
+
+    <!-- New lines to load Ionic CSS -->
+    <link rel="stylesheet" href="ionic/css/ionic.css" />
+</head>
+
+<body style="display: none;">
+    <!--application UI goes here-->
+    <!-- Hello MobileFirst -->
+    <ion-side-menus>
+
+      <ion-side-menu-content>
+        <!-- Ionic places our views here-->
+
+        <!-- Configure the global navigation/title bar -->
+        <ion-nav-bar class="bar-dark">
+          <!-- Default buttons -->
+          <ion-nav-buttons side="primary">
+            <!-- "Hamburger" menu -->
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+          </ion-nav-buttons>
+          <!-- Automatic back button -->
+          <ion-nav-back-button></ion-nav-back-button>
+        </ion-nav-bar>
+
+        <!-- Contains our views -->
+        <ion-nav-view></ion-nav-view>
+
+      </ion-side-menu-content>
+
+      <ion-side-menu side="left">
+        <!-- Define our left-hand-side menu -->
+        <header class="bar bar-header bar-dark">
+          <h1 class="title">Space!</h1>
+        </header>
+        <ion-content class="has-header">
+          <ion-list>
+            <ion-item nav-clear menu-close href="#/home" class="item-icon-left">
+              <i class="icon ion-ios7-home"></i> Home
+            </ion-item>
+            <ion-item class="item-divider">
+              Amazing Things
+            </ion-item>
+            <ion-item nav-clear menu-close href="#/planets" class="item-icon-left">
+              <i class="icon ion-planet"></i> Planets
+            </ion-item>
+            <ion-item nav-clear menu-close href="#/blackholes" class="item-icon-left">
+              <i class="icon ion-funnel"></i> Black Holes
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-side-menu>
+
+    </ion-side-menus>
+
+    <script src="js/initOptions.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/messages.js"></script>
+    <!-- New lines to load Ionic JS bundle -->
+    <script src="ionic/js/ionic.bundle.js"></script>
+    <!-- New lines to load our modules -->
+    <script src="app/app-main.js"></script>
+</body>
+
+</html>
